@@ -1,0 +1,204 @@
+/* Definições globais */
+* {
+    font-family: "Oswald", sans-serif;
+    /* Define a fonte padrão para toda a página */
+    margin: 0;
+    /* Remove margens padrão */
+    padding: 0;
+    /* Remove preenchimento padrão */
+    box-sizing: border-box;
+    /* Garante que a largura e altura incluam padding e bordas */
+    font-weight: 400;
+    /* Define o peso da fonte para todos os elementos */
+    color: #5d5d7d;
+    /* Define a cor do texto para todos os elementos */
+}
+
+/* Estilos específicos para a seção principal */
+.main {
+    height: 100vh;
+    /* Define a altura da seção principal como a altura total da viewport */
+    width: 100vw;
+    /* Define a largura da seção principal como a largura total da viewport */
+}
+
+/* Estilos para o contêiner da esquerda */
+.container-left {
+    display: inline-block;
+    /* Faz o contêiner se comportar como um bloco inline */
+    width: 60%;
+    /* Define a largura do contêiner da esquerda como 60% da largura total */
+    padding-left: 136px;
+    /* Adiciona preenchimento à esquerda do contêiner */
+    margin-top: 20%;
+    /* Adiciona margem superior */
+}
+
+/* Estilos para o contêiner da direita */
+.container-right {
+    display: inline-block;
+    /* Faz o contêiner se comportar como um bloco inline */
+    background-color: rgb(93, 93, 125, 0.16);
+    /* Define a cor de fundo com transparência */
+    height: 100vh;
+    /* Define a altura do contêiner da direita como a altura total da viewport */
+    width: 40%;
+    /* Define a largura do contêiner da direita como 40% da largura total */
+    position: absolute;
+    /* Define a posição absoluta para o contêiner */
+}
+
+/* Estilos para imagens */
+img {
+    position: relative;
+    /* Define a posição relativa */
+    top: 20%;
+    /* Define a posição superior */
+    right: 130px;
+    /* Define a posição à direita */
+}
+
+/* Estilos para títulos */
+h1 {
+    font-size: 70px;
+    /* Define o tamanho da fonte */
+    line-height: 80px;
+    /* Define a altura da linha */
+    width: 368px;
+    /* Define a largura */
+}
+
+/* Estilos para parágrafos */
+p {
+    font-size: 28px;
+    /* Define o tamanho da fonte */
+    line-height: 48px;
+    /* Define a altura da linha */
+    opacity: 0.6;
+    /* Define a opacidade */
+    margin: 15px 0;
+    /* Define as margens superior e inferior */
+    width: 540px;
+    /* Define a largura */
+}
+
+/* Estilos para botões */
+button {
+    width: 269px;
+    /* Define a largura */
+    height: 62px;
+    /* Define a altura */
+    color: white;
+    /* Define a cor do texto */
+    background: #9499EA;
+    /* Define a cor de fundo */
+    font-size: 24px;
+    /* Define o tamanho da fonte */
+    line-height: 36px;
+    /* Define a altura da linha */
+    text-align: center;
+    /* Centraliza o texto */
+    border-radius: 35px;
+    /* Define o raio da borda */
+    border: none;
+    /* Remove a borda */
+}
+
+/* Estilos para o efeito de hover nos botões */
+button:hover {
+    opacity: .8;
+    /* Define a opacidade ao passar o mouse */
+}
+
+/* Estilos para o efeito de clique nos botões */
+button:active {
+    opacity: .5;
+    /* Define a opacidade ao clicar */
+}
+
+/* Estilos para links */
+a {
+    font-size: 28px;
+    /* Define o tamanho da fonte */
+    line-height: 41px;
+    /* Define a altura da linha */
+    color: #5D5D7D;
+    /* Define a cor do texto */
+    margin-right: 41px;
+    /* Define a margem à direita */
+    text-decoration: none;
+    /* Remove a decoração do texto */
+}
+
+/* Estilos para o efeito de hover nos links */
+a:hover {
+    opacity: .4;
+    /* Define a opacidade ao passar o mouse */
+}
+
+/* Estilos para o efeito de clique nos links */
+a:active {
+    opacity: .8;
+    /* Define a opacidade ao clicar */
+}
+
+/* Estilos para o cabeçalho */
+header {
+    margin: 24px 0 0 57px;
+    /* Define as margens */
+}
+
+/* Estilos para telas com largura máxima de 900px */
+@media screen and (max-width: 900px) {
+    /* Estilos para o contêiner da esquerda */
+    .container-left {
+        width: 100%; /* Define a largura como 100% */
+        height: 50%; /* Define a altura como 50% */
+        padding: 0; /* Remove o preenchimento */
+        margin: 0; /* Remove as margens */
+    }
+
+    /* Estilos para o contêiner da direita */
+    .container-right {
+        display: block; /* Faz o contêiner se comportar como um bloco */
+        height: auto; /* Define a altura automática */
+        width: 100%; /* Define a largura como 100% */
+        position: static; /* Define a posição como estática */
+        padding: 40px; /* Adiciona preenchimento */
+    }
+
+    /* Estilos para imagens */
+    img {
+        position: static; /* Define a posição como estática */
+        max-width: 90%; /* Define a largura máxima como 90% */
+    }
+
+    /* Estilos para o cabeçalho */
+    header {
+        display: none; /* Oculta o cabeçalho */
+    }
+
+    /* Estilos para títulos */
+    h1 {
+        font-size: 36px; /* Define o tamanho da fonte */
+        line-height: 52px; /* Define a altura da linha */
+        width: auto; /* Define a largura automática */
+        margin: 58px 50px 0 50px; /* Define as margens */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    /* Estilos para parágrafos */
+    p {
+        margin: 15px 40px; /* Define as margens */
+        width: auto; /* Define a largura automática */
+        text-align: center; /* Centraliza o texto */
+        font-size: 14px; /* Define o tamanho da fonte */
+        line-height: 24px; /* Define a altura da linha */
+    }
+
+    /* Estilos para botões */
+    button {
+        margin: 0 auto; /* Define as margens */
+        display: block; /* Faz o botão se comportar como um bloco */
+    }
+}
